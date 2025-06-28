@@ -7,7 +7,6 @@ function LocateButton({ setPosition }) {
   const handleClick = () => {
     map.locate().on("locationfound", function (e) {
       setPosition(e.latlng);
-      console.log(e.latlng)
       map.flyTo(e.latlng, 13);
     });
   };
