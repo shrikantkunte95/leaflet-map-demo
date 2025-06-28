@@ -23,11 +23,11 @@ function App() {
   //     </Marker>
   //   )
   // }
-  const [position, setPosition] = useState([51.505, -0.09]);
+  const [position, setPosition] = useState([23.2546, 77.4048]);
   
   return (
     <div className="map-wrapper">
-      <MapContainer center={position} zoom={10} attributionControl={false} >
+      <MapContainer center={position} zoom={5} attributionControl={false} >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
